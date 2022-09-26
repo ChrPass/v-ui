@@ -2,15 +2,15 @@ const Modal = () => {
   return (
     <>
       <div
-        class="py-12 bg-gray-700 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0"
+        className="py-12 bg-gray-700 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0"
         id="modal"
       >
-        <div role="alert" class="container mx-auto w-11/12 md:w-2/3 max-w-lg">
-          <div class="relative py-8 px-5 md:px-10 bg-white shadow-md rounded border border-gray-400">
-            <div class="w-full flex justify-start text-gray-600 mb-3">
+        <div role="alert" className="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+          <div className="relative py-8 px-5 md:px-10 bg-white shadow-md rounded border border-gray-400">
+            <div className="w-full flex justify-start text-gray-600 mb-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-wallet"
+                className="icon icon-tabler icon-tabler-wallet"
                 width="52"
                 height="52"
                 viewBox="0 0 24 24"
@@ -25,31 +25,31 @@ const Modal = () => {
                 <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4" />
               </svg>
             </div>
-            <h1 class="text-gray-800 font-lg font-bold tracking-normal leading-tight mb-4">
+            <h1 className="text-gray-800 font-lg font-bold tracking-normal leading-tight mb-4">
               Enter Billing Details
             </h1>
             <label
               for="name"
-              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
+              className="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >
               Owner Name
             </label>
             <input
               id="name"
-              class="mb-5 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
+              className="mb-5 mt-2 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
               placeholder="James"
             />
             <label
               for="email2"
-              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
+              className="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >
               Card Number
             </label>
-            <div class="relative mb-5 mt-2">
-              <div class="absolute text-gray-600 flex items-center px-4 border-r h-full">
+            <div className="relative mb-5 mt-2">
+              <div className="absolute text-gray-600 flex items-center px-4 border-r h-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-credit-card"
+                  className="icon icon-tabler icon-tabler-credit-card"
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
@@ -68,21 +68,21 @@ const Modal = () => {
               </div>
               <input
                 id="email2"
-                class="text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-16 text-sm border-gray-300 rounded border"
+                className="text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-16 text-sm border-gray-300 rounded border"
                 placeholder="XXXX - XXXX - XXXX - XXXX"
               />
             </div>
             <label
               for="expiry"
-              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
+              className="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >
               Expiry Date
             </label>
-            <div class="relative mb-5 mt-2">
-              <div class="absolute right-0 text-gray-600 flex items-center pr-3 h-full cursor-pointer">
+            <div className="relative mb-5 mt-2">
+              <div className="absolute right-0 text-gray-600 flex items-center pr-3 h-full cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-calendar-event"
+                  className="icon icon-tabler icon-tabler-calendar-event"
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
@@ -102,21 +102,21 @@ const Modal = () => {
               </div>
               <input
                 id="expiry"
-                class="text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
+                className="text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                 placeholder="MM/YY"
               />
             </div>
             <label
               for="cvc"
-              class="text-gray-800 text-sm font-bold leading-tight tracking-normal"
+              className="text-gray-800 text-sm font-bold leading-tight tracking-normal"
             >
               CVC
             </label>
-            <div class="relative mb-5 mt-2">
-              <div class="absolute right-0 text-gray-600 flex items-center pr-3 h-full cursor-pointer">
+            <div className="relative mb-5 mt-2">
+              <div className="absolute right-0 text-gray-600 flex items-center pr-3 h-full cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-info-circle"
+                  className="icon icon-tabler icon-tabler-info-circle"
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
@@ -134,30 +134,30 @@ const Modal = () => {
               </div>
               <input
                 id="cvc"
-                class="mb-8 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
+                className="mb-8 text-gray-600 focus:outline-none focus:border focus:border-indigo-700 font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                 placeholder="MM/YY"
               />
             </div>
-            <div class="flex items-center justify-start w-full">
-              <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm">
+            <div className="flex items-center justify-start w-full">
+              <button className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm">
                 Submit
               </button>
               <button
-                class="focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-400 ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 border rounded px-8 py-2 text-sm"
+                className="focus:outline-none focus:ring-2 focus:ring-offset-2  focus:ring-gray-400 ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 border rounded px-8 py-2 text-sm"
                 onclick="modalHandler()"
               >
                 Cancel
               </button>
             </div>
             <button
-              class="cursor-pointer absolute top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 transition duration-150 ease-in-out rounded focus:ring-2 focus:outline-none focus:ring-gray-600"
+              className="cursor-pointer absolute top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 transition duration-150 ease-in-out rounded focus:ring-2 focus:outline-none focus:ring-gray-600"
               onclick="modalHandler()"
               aria-label="close modal"
               role="button"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-x"
+                className="icon icon-tabler icon-tabler-x"
                 width="20"
                 height="20"
                 viewBox="0 0 24 24"
@@ -175,9 +175,9 @@ const Modal = () => {
           </div>
         </div>
       </div>
-      <div class="w-full flex justify-center py-12" id="button">
+      <div className="w-full flex justify-center py-12" id="button">
         <button
-          class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 mx-auto transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-4 sm:px-8 py-2 text-xs sm:text-sm"
+          className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 mx-auto transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-4 sm:px-8 py-2 text-xs sm:text-sm"
           onclick="modalHandler(true)"
         >
           Open Modal

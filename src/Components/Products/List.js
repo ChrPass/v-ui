@@ -49,17 +49,8 @@ const List = () => {
     });
   }, []);
 
-  const handleItemQuantityChange = (index, newQuontity) => {
-    const newList = [...list];
-
-    const item = newList[index];
-
-    item.quantity = newQuontity;
-
-    setList([...newList]);
-  };
-
   return (
+
     <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
       <div className="py-8">
         <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -85,9 +76,6 @@ const List = () => {
                   >
                     Quantity
                   </th>
-                  {/* <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal">
-                                        status
-                                    </th> */}
                 </tr>
               </thead>
               <tbody>

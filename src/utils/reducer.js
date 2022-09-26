@@ -9,7 +9,6 @@ function reducer(state, action) {
     switch (action.type) {
         case "ADD_TO_CART":
             // logic for adding to basket
-            debugger
             return {
                 ...state,
                 cart: [...state.cart, action.item],
