@@ -1,34 +1,34 @@
 export const initialState = {
-    cart: [],
+  cart: [], validStatus: false
 };
 
 export const getBasketTotal = (basket) =>
-    basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
+  basket?.reduce((amount, item) => parseInt(item.price) + amount, 0);
 
 function reducer(state, action) {
-    switch (action.type) {
-        case "ADD_TO_CART":
-            // logic for adding to basket
-            return {
-                ...state,
-                cart: [...state.cart, action.item],
-            };
-        case "REMOVE_FROM_CART":
-            // logic for removing
-            let newCart = [...state.cart]; //cloning basket
-            const index = state.basket.findIndex(
-                (cartItem) => cartItem.id === action.id // getting index of item to be deleted
-            );
+  switch (action.type) {
+    case "ADD_TO_CART":
+      return {
+        ...state,
+        cart: [...state.cart, action.item],
+      };
+    case "REMOVE_FROM_CART":
+      let newCart = [...state.cart];
 
-            if (index >= 0) {
-                newCart.splice(index, 1); //remove 1 element after "index"
-            } else {
-                console.warn(`${action.id} does not exist `);
-            }
-            return { ...state, cart: newCart };
-        default:
-            return state;
-    }
+      if (action.index >= 0) {
+        newCart.splice(action.index, 1); 
+      } else {
+        console.warn(`${action.index} does not exist `);
+      }
+      return { ...state, cart: newCart };
+
+    case "SET_PAYMENT_FORM__VALID_STATUS":
+      const validStatus = action.validStatus;
+
+      return { ...state, validStatus: validStatus };
+    default:
+      return state;
+  }
 }
 
 export default reducer;

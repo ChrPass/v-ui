@@ -1,8 +1,10 @@
 import React from "react";
 import { ShoppingCartIcon } from "@heroicons/react/20/solid";
 import { useStateValue } from "../StateProvider";
+import { useNavigate } from "react-router-dom";
 
 const DropDownMenu = (props) => {
+    const navigate = useNavigate();
   const [{ cart = [] }] = useStateValue();
   return (
     <div>
@@ -13,8 +15,8 @@ const DropDownMenu = (props) => {
               <div className="block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
+                    onClick={()=> {navigate("products")}}
                     className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    href="/#"
                   >
                     Home
                   </a>
